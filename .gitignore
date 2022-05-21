@@ -2,4 +2,6 @@
 .vscode
 .history
 
+coverage
+
 node_modules
