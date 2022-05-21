@@ -16,7 +16,6 @@ function App() {
             <BrowserRouter>
                 <Header />
                 <Routes>
-                    {/*{cookie === undefined && navigate('/login')}*/}
                     <Route path="/" element={<h1>home</h1>} />
                     <Route path="/profile" element={<Profile />} />
                     <Route path="/train" element={<Train />} />
