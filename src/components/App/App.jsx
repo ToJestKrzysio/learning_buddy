@@ -1,12 +1,16 @@
 import React from 'react';
 import './App.scss';
-import Button from 'react-bootstrap/Button';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
     return (
         <div>
-            <h1>Hello World!</h1>
-            <Button variant="primary">Bootstrap</Button>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Link to="/profile">Profile</Link>} />
+                    <Route path="/profile" element={<Link to="/">Home</Link>} />
+                </Routes>
+            </BrowserRouter>
         </div>
     );
 }
