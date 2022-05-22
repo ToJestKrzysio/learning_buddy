@@ -1,2 +1,12 @@
+.training_card {
 
+  &__image {
 
+    &:hover {
+      transform: scale(1.1);
+      transition: 300ms;
+    }
+
+  }
+
+}
