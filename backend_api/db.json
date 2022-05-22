@@ -1,8 +1,38 @@
 {
   "users": [
     {
-      "id": 0,
+      "id": 1,
       "name": "John"
+    }
+  ],
+  "sets":[
+    {
+      "id": 1,
+      "name":  "JavaScript",
+      "level": "junior",
+      "quantity": 30,
+      "image": "js.png"
+    },
+    {
+      "id": 2,
+      "name":  "Python",
+      "level": "junior",
+      "quantity": 15,
+      "image": "python.png"
+    },
+    {
+      "id": 3,
+      "name":  "Django",
+      "level": "mid",
+      "quantity": 20,
+      "image": "python.png"
+    },
+    {
+      "id": 4,
+      "name":  "React",
+      "level": "junior",
+      "quantity": 40,
+      "image": "react.png"
     }
   ]
 }
