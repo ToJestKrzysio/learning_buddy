@@ -22,7 +22,10 @@ function App() {
                         <Routes>
                             <Route path="/" element={<h1>home</h1>} />
                             <Route path="/profile" element={<Profile />} />
+
                             <Route path="/train" element={<Train />} />
+                            <Route path="/train/:id" element={<h2>Work in Progress</h2>} />
+
                             <Route path="/login" element={<Login />} />
                             <Route path="/register" element={<Register />} />
                         </Routes>
