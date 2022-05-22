@@ -7,6 +7,8 @@ import Profile from '../Profile/Profile';
 import Login from '../Auth/Login/Login';
 import Register from '../Auth/Register/Register';
 import useCookie from '../../hooks/useCookie';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 function App() {
     const [cookie, setCookie] = useCookie('token_auth');
@@ -15,13 +17,17 @@ function App() {
         <div>
             <BrowserRouter>
                 <Header />
-                <Routes>
-                    <Route path="/" element={<h1>home</h1>} />
-                    <Route path="/profile" element={<Profile />} />
-                    <Route path="/train" element={<Train />} />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/register" element={<Register />} />
-                </Routes>
+                <Container>
+                    <Row className="justify-content-center">
+                        <Routes>
+                            <Route path="/" element={<h1>home</h1>} />
+                            <Route path="/profile" element={<Profile />} />
+                            <Route path="/train" element={<Train />} />
+                            <Route path="/login" element={<Login />} />
+                            <Route path="/register" element={<Register />} />
+                        </Routes>
+                    </Row>
+                </Container>
             </BrowserRouter>
         </div>
     );
