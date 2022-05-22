@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Train.scss';
-import Card from '../Card/Card';
+import TrainingCard from '../TrainingCard/TrainingCard.jsx';
 
 function Train() {
     const [cards, setCards] = useState([]);
@@ -21,7 +21,14 @@ function Train() {
     return (
         <div>
             {cards.map(({ id, name, level, image, quantity }) => (
-                <Card key={id} name={name} level={level} image={image} quantity={quantity} />
+                <TrainingCard
+                    key={id}
+                    id={id}
+                    name={name}
+                    level={level}
+                    image={image}
+                    quantity={quantity}
+                />
             ))}
         </div>
     );

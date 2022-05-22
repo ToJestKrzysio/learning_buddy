@@ -8,10 +8,10 @@
   "sets":[
     {
       "id": 1,
-      "name":  "JavaScript",
+      "name":  "Javascript",
       "level": "junior",
       "quantity": 30,
-      "image": "js.png"
+      "image": "javascript.png"
     },
     {
       "id": 2,
@@ -25,7 +25,7 @@
       "name":  "Django",
       "level": "mid",
       "quantity": 20,
-      "image": "python.png"
+      "image": "django.png"
     },
     {
       "id": 4,
