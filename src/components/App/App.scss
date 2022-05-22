@@ -1,3 +1,18 @@
 $primary: #262626;
 
+
 @import "../../../node_modules/bootstrap/scss/bootstrap";
+
+
+.btn-warning {
+  color: white;
+
+  &:hover{
+    color: white;
+  }
+
+  &:focus{
+    color: white;
+  }
+
+}
