@@ -1,15 +1,22 @@
 import { useEffect, useState } from 'react';
 
 function useCookie(cookieName) {
-    const [cookie, setCookie] = useState(undefined);
+    const [cookie, setCookie] = useState(get_cookie);
 
-    useEffect(() => {
+    function get_cookie() {
         const value = document.cookie
             .split('; ')
             .filter((cookie) => cookie.startsWith(`${cookieName}=`))[0];
-
         if (value !== undefined) {
-            setCookie(value.split('=')[1]);
+            return value.split('=')[1];
+        }
+        return undefined;
+    }
+
+    useEffect(() => {
+        const cookie_ = get_cookie();
+        if (cookie_ !== undefined) {
+            setCookie(cookie_);
         }
     }, [cookieName]);
 
