@@ -11,11 +11,11 @@ function Question({ question, answer }) {
     }
 
     return (
-        <Card className={showAnswer ? 'flip_card active p-0' : 'flip_card p-0'} onClick={handleShowAnswer}>
+        <Card className={showAnswer ? 'flip_card active' : 'flip_card'}>
             <div className="flip_card--inner">
-                <div className="flip_card--front">
-                    <Card.Body>
-                        <Card.Title>{question}</Card.Title>
+                <div className="flip_card--front" onClick={handleShowAnswer}>
+                    <Card.Body className="d-flex flex-column justify-content-center max_height">
+                        <Card.Title as="h2">{question}</Card.Title>
                     </Card.Body>
                 </div>
                 <div className="flip_card--back">
