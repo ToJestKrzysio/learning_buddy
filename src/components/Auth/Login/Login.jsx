@@ -57,13 +57,12 @@ function Login() {
                             <Form.Check
                                 type="checkbox"
                                 label="Remember me"
-                                variant="secondary"
                                 checked={rememberMe}
                                 onClick={handleRememberMe}
                             />
                         </Form.Group>
 
-                        <Button variant="outline-dark" type="submit" className="">
+                        <Button type="submit" className="">
                             Login
                         </Button>
                     </Form>
