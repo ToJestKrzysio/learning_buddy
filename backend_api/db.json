@@ -52,15 +52,18 @@
   "cards": [
     {
       "id": 1,
-      "name": "js"
+      "question": "What is JS",
+      "answer": "It is a strange programming language"
     },
     {
       "id": 2,
-      "name": "means"
+      "question": "What is the current minor python version",
+      "answer": "3.10"
     },
     {
       "id": 3,
-      "name": "JavaScript"
+      "question": "What Language is Python",
+      "answer": "It is a general purpose language"
     }
   ]
 }
